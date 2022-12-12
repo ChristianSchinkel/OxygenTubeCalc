@@ -44,6 +44,7 @@
 		AA24DC492947870900C61A2C /* OxygenTubeCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OxygenTubeCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA24DC4D2947870900C61A2C /* OxygenTubeCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenTubeCalcUITests.swift; sourceTree = "<group>"; };
 		AA24DC4F2947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenTubeCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA24DC5C294787DC00C61A2C /* OxygenTubeCalcPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OxygenTubeCalcPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +95,9 @@
 		AA24DC312947870800C61A2C /* OxygenTubeCalc */ = {
 			isa = PBXGroup;
 			children = (
+				AA24DC5C294787DC00C61A2C /* OxygenTubeCalcPlayground.playground */,
 				AA24DC322947870800C61A2C /* OxygenTubeCalcApp.swift */,
-				AA24DC342947870800C61A2C /* ContentView.swift */,
+				AA24DC5D2947894800C61A2C /* Views */,
 				AA24DC362947870900C61A2C /* Assets.xcassets */,
 				AA24DC382947870900C61A2C /* Preview Content */,
 			);
@@ -125,6 +127,14 @@
 				AA24DC4F2947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift */,
 			);
 			path = OxygenTubeCalcUITests;
+			sourceTree = "<group>";
+		};
+		AA24DC5D2947894800C61A2C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA24DC342947870800C61A2C /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
