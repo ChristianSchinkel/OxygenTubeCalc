@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA24DC332947870800C61A2C /* OxygenTubeCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24DC322947870800C61A2C /* OxygenTubeCalcApp.swift */; };
+		AA24DC352947870800C61A2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24DC342947870800C61A2C /* ContentView.swift */; };
+		AA24DC372947870900C61A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA24DC362947870900C61A2C /* Assets.xcassets */; };
+		AA24DC3A2947870900C61A2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA24DC392947870900C61A2C /* Preview Assets.xcassets */; };
+		AA24DC442947870900C61A2C /* OxygenTubeCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24DC432947870900C61A2C /* OxygenTubeCalcTests.swift */; };
+		AA24DC4E2947870900C61A2C /* OxygenTubeCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24DC4D2947870900C61A2C /* OxygenTubeCalcUITests.swift */; };
+		AA24DC502947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24DC4F2947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA24DC402947870900C61A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA24DC272947870800C61A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA24DC2E2947870800C61A2C;
+			remoteInfo = OxygenTubeCalc;
+		};
+		AA24DC4A2947870900C61A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA24DC272947870800C61A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA24DC2E2947870800C61A2C;
+			remoteInfo = OxygenTubeCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA24DC2F2947870800C61A2C /* OxygenTubeCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OxygenTubeCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA24DC322947870800C61A2C /* OxygenTubeCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenTubeCalcApp.swift; sourceTree = "<group>"; };
+		AA24DC342947870800C61A2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA24DC362947870900C61A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA24DC392947870900C61A2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA24DC3F2947870900C61A2C /* OxygenTubeCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OxygenTubeCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA24DC432947870900C61A2C /* OxygenTubeCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenTubeCalcTests.swift; sourceTree = "<group>"; };
+		AA24DC492947870900C61A2C /* OxygenTubeCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OxygenTubeCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA24DC4D2947870900C61A2C /* OxygenTubeCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenTubeCalcUITests.swift; sourceTree = "<group>"; };
+		AA24DC4F2947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenTubeCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA24DC2C2947870800C61A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA24DC3C2947870900C61A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA24DC462947870900C61A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA24DC262947870800C61A2C = {
+			isa = PBXGroup;
+			children = (
+				AA24DC312947870800C61A2C /* OxygenTubeCalc */,
+				AA24DC422947870900C61A2C /* OxygenTubeCalcTests */,
+				AA24DC4C2947870900C61A2C /* OxygenTubeCalcUITests */,
+				AA24DC302947870800C61A2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA24DC302947870800C61A2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA24DC2F2947870800C61A2C /* OxygenTubeCalc.app */,
+				AA24DC3F2947870900C61A2C /* OxygenTubeCalcTests.xctest */,
+				AA24DC492947870900C61A2C /* OxygenTubeCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA24DC312947870800C61A2C /* OxygenTubeCalc */ = {
+			isa = PBXGroup;
+			children = (
+				AA24DC322947870800C61A2C /* OxygenTubeCalcApp.swift */,
+				AA24DC342947870800C61A2C /* ContentView.swift */,
+				AA24DC362947870900C61A2C /* Assets.xcassets */,
+				AA24DC382947870900C61A2C /* Preview Content */,
+			);
+			path = OxygenTubeCalc;
+			sourceTree = "<group>";
+		};
+		AA24DC382947870900C61A2C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA24DC392947870900C61A2C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA24DC422947870900C61A2C /* OxygenTubeCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA24DC432947870900C61A2C /* OxygenTubeCalcTests.swift */,
+			);
+			path = OxygenTubeCalcTests;
+			sourceTree = "<group>";
+		};
+		AA24DC4C2947870900C61A2C /* OxygenTubeCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA24DC4D2947870900C61A2C /* OxygenTubeCalcUITests.swift */,
+				AA24DC4F2947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift */,
+			);
+			path = OxygenTubeCalcUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA24DC2E2947870800C61A2C /* OxygenTubeCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA24DC532947870900C61A2C /* Build configuration list for PBXNativeTarget "OxygenTubeCalc" */;
+			buildPhases = (
+				AA24DC2B2947870800C61A2C /* Sources */,
+				AA24DC2C2947870800C61A2C /* Frameworks */,
+				AA24DC2D2947870800C61A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OxygenTubeCalc;
+			productName = OxygenTubeCalc;
+			productReference = AA24DC2F2947870800C61A2C /* OxygenTubeCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA24DC3E2947870900C61A2C /* OxygenTubeCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA24DC562947870900C61A2C /* Build configuration list for PBXNativeTarget "OxygenTubeCalcTests" */;
+			buildPhases = (
+				AA24DC3B2947870900C61A2C /* Sources */,
+				AA24DC3C2947870900C61A2C /* Frameworks */,
+				AA24DC3D2947870900C61A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA24DC412947870900C61A2C /* PBXTargetDependency */,
+			);
+			name = OxygenTubeCalcTests;
+			productName = OxygenTubeCalcTests;
+			productReference = AA24DC3F2947870900C61A2C /* OxygenTubeCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA24DC482947870900C61A2C /* OxygenTubeCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA24DC592947870900C61A2C /* Build configuration list for PBXNativeTarget "OxygenTubeCalcUITests" */;
+			buildPhases = (
+				AA24DC452947870900C61A2C /* Sources */,
+				AA24DC462947870900C61A2C /* Frameworks */,
+				AA24DC472947870900C61A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA24DC4B2947870900C61A2C /* PBXTargetDependency */,
+			);
+			name = OxygenTubeCalcUITests;
+			productName = OxygenTubeCalcUITests;
+			productReference = AA24DC492947870900C61A2C /* OxygenTubeCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA24DC272947870800C61A2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					AA24DC2E2947870800C61A2C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					AA24DC3E2947870900C61A2C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AA24DC2E2947870800C61A2C;
+					};
+					AA24DC482947870900C61A2C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = AA24DC2E2947870800C61A2C;
+					};
+				};
+			};
+			buildConfigurationList = AA24DC2A2947870800C61A2C /* Build configuration list for PBXProject "OxygenTubeCalc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA24DC262947870800C61A2C;
+			productRefGroup = AA24DC302947870800C61A2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA24DC2E2947870800C61A2C /* OxygenTubeCalc */,
+				AA24DC3E2947870900C61A2C /* OxygenTubeCalcTests */,
+				AA24DC482947870900C61A2C /* OxygenTubeCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA24DC2D2947870800C61A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA24DC3A2947870900C61A2C /* Preview Assets.xcassets in Resources */,
+				AA24DC372947870900C61A2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA24DC3D2947870900C61A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA24DC472947870900C61A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA24DC2B2947870800C61A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA24DC352947870800C61A2C /* ContentView.swift in Sources */,
+				AA24DC332947870800C61A2C /* OxygenTubeCalcApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA24DC3B2947870900C61A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA24DC442947870900C61A2C /* OxygenTubeCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA24DC452947870900C61A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA24DC4E2947870900C61A2C /* OxygenTubeCalcUITests.swift in Sources */,
+				AA24DC502947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA24DC412947870900C61A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA24DC2E2947870800C61A2C /* OxygenTubeCalc */;
+			targetProxy = AA24DC402947870900C61A2C /* PBXContainerItemProxy */;
+		};
+		AA24DC4B2947870900C61A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA24DC2E2947870800C61A2C /* OxygenTubeCalc */;
+			targetProxy = AA24DC4A2947870900C61A2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA24DC512947870900C61A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA24DC522947870900C61A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA24DC542947870900C61A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OxygenTubeCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = 5NMH6T4VP3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.schinkel.christian.OxygenTubeCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA24DC552947870900C61A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OxygenTubeCalc/Preview Content\"";
+				DEVELOPMENT_TEAM = 5NMH6T4VP3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.schinkel.christian.OxygenTubeCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA24DC572947870900C61A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NMH6T4VP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.schinkel.christian.OxygenTubeCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OxygenTubeCalc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OxygenTubeCalc";
+			};
+			name = Debug;
+		};
+		AA24DC582947870900C61A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NMH6T4VP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.schinkel.christian.OxygenTubeCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OxygenTubeCalc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OxygenTubeCalc";
+			};
+			name = Release;
+		};
+		AA24DC5A2947870900C61A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NMH6T4VP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.schinkel.christian.OxygenTubeCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OxygenTubeCalc;
+			};
+			name = Debug;
+		};
+		AA24DC5B2947870900C61A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NMH6T4VP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.schinkel.christian.OxygenTubeCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OxygenTubeCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA24DC2A2947870800C61A2C /* Build configuration list for PBXProject "OxygenTubeCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA24DC512947870900C61A2C /* Debug */,
+				AA24DC522947870900C61A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA24DC532947870900C61A2C /* Build configuration list for PBXNativeTarget "OxygenTubeCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA24DC542947870900C61A2C /* Debug */,
+				AA24DC552947870900C61A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA24DC562947870900C61A2C /* Build configuration list for PBXNativeTarget "OxygenTubeCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA24DC572947870900C61A2C /* Debug */,
+				AA24DC582947870900C61A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA24DC592947870900C61A2C /* Build configuration list for PBXNativeTarget "OxygenTubeCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA24DC5A2947870900C61A2C /* Debug */,
+				AA24DC5B2947870900C61A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA24DC272947870800C61A2C /* Project object */;
+}
