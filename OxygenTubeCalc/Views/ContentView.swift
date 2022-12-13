@@ -20,6 +20,10 @@ struct ContentView: View {
         oxygenTubeRemindingTimeUntilEmpty(tubeVolume: volume, tubePressure: pressure, literPerMinute: flow)
     }
     
+    private var changeTubeDueDate: Date {
+        calcChangingTimeWithMarginal(tubeVolume: volume, tubePressure: pressure, literPerMinute: flow)
+    }
+    
     let swedishVolumeFormatStyle = Measurement<UnitVolume>.FormatStyle(width: .wide, locale: .init(languageCode: .swedish, script: .latin, languageRegion: .sweden), usage: .liquid, numberFormatStyle: .number)
     let durationFormatStyle = Measurement<UnitDuration>.FormatStyle(width: .wide, usage: .general, numberFormatStyle: .number)
     
@@ -35,6 +39,10 @@ struct ContentView: View {
                 Section("Reminding Time:") {
                     TextField("Flow", value: $flow, format: .number)
                     Text("The current estimated time until the tube is empty is now: \n \(remindingMinutes.formatted(durationFormatStyle)).")
+                }
+                
+                Section("DueDate to change the tube") {
+                    Text("\(changeTubeDueDate, format: .dateTime)")
                 }
                 
             }
@@ -63,7 +71,20 @@ struct ContentView: View {
     /// - Returns: An estimated time in minute/s until the oxygen-tube is empty.
     private func oxygenTubeRemindingTimeUntilEmpty(tubeVolume volume: Double, tubePressure pressure: Double, literPerMinute flow: Double) -> Measurement<UnitDuration> {
         let minutes = volume * pressure / flow
+        
         return  Measurement(value: minutes, unit: UnitDuration.minutes)
+    }
+    /// This method returns a date when to change a tube filled with oxygen for medical usage with a marginal of 10 %.
+    /// - Parameters:
+    ///   - volume: liter/s [L]
+    ///   - pressure: bars [bar]
+    ///   - flow: liter/s per minute [L/min]
+    /// - Returns: An estimated date when to change the oxygen-tube.
+    private func calcChangingTimeWithMarginal(tubeVolume volume: Double, tubePressure pressure: Double, literPerMinute flow: Double) -> Date {
+        let minutes = volume * pressure / flow
+        let seconds = minutes * 60 * 0.9
+        
+        return Date().addingTimeInterval(seconds)
     }
 }
 
