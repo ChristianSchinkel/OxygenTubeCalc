@@ -14,6 +14,9 @@
 		AA24DC442947870900C61A2C /* OxygenTubeCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24DC432947870900C61A2C /* OxygenTubeCalcTests.swift */; };
 		AA24DC4E2947870900C61A2C /* OxygenTubeCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24DC4D2947870900C61A2C /* OxygenTubeCalcUITests.swift */; };
 		AA24DC502947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24DC4F2947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift */; };
+		AAA166982CA08BA7009DEB7D /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA166972CA08BA7009DEB7D /* VolumeView.swift */; };
+		AAA166992CA08BA7009DEB7D /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA166972CA08BA7009DEB7D /* VolumeView.swift */; };
+		AAA1669A2CA08BA7009DEB7D /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA166972CA08BA7009DEB7D /* VolumeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 		AA24DC4D2947870900C61A2C /* OxygenTubeCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenTubeCalcUITests.swift; sourceTree = "<group>"; };
 		AA24DC4F2947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenTubeCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AA24DC5C294787DC00C61A2C /* OxygenTubeCalcPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OxygenTubeCalcPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		AAA166972CA08BA7009DEB7D /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				AA24DC342947870800C61A2C /* ContentView.swift */,
+				AAA166972CA08BA7009DEB7D /* VolumeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,7 +206,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					AA24DC2E2947870800C61A2C = {
 						CreatedOnToolsVersion = 14.1;
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA24DC352947870800C61A2C /* ContentView.swift in Sources */,
+				AAA166982CA08BA7009DEB7D /* VolumeView.swift in Sources */,
 				AA24DC332947870800C61A2C /* OxygenTubeCalcApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA166992CA08BA7009DEB7D /* VolumeView.swift in Sources */,
 				AA24DC442947870900C61A2C /* OxygenTubeCalcTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA24DC4E2947870900C61A2C /* OxygenTubeCalcUITests.swift in Sources */,
+				AAA1669A2CA08BA7009DEB7D /* VolumeView.swift in Sources */,
 				AA24DC502947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +349,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -401,6 +410,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -480,7 +490,6 @@
 		AA24DC572947870900C61A2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -500,7 +509,6 @@
 		AA24DC582947870900C61A2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -520,7 +528,6 @@
 		AA24DC5A2947870900C61A2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5NMH6T4VP3;
@@ -538,7 +545,6 @@
 		AA24DC5B2947870900C61A2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5NMH6T4VP3;
