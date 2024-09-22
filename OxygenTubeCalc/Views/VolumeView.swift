@@ -8,11 +8,38 @@
 import SwiftUI
 
 struct VolumeView: View {
+    @Binding var volume: Double
+    @State private var isEditing: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Slider(
+                value: $volume,
+                in: 0...50,
+                step: 1
+            ) {
+                Text("Volume")
+            } minimumValueLabel: {
+                Text("0")
+            } maximumValueLabel: {
+                Text("50")
+            } onEditingChanged: { editing in
+                isEditing = editing
+            }
+            Text("\(volume, format: .number)")
+                .foregroundColor(isEditing ? .red : .blue)
+        }
     }
 }
 
 #Preview {
-    VolumeView()
+    struct Preview: View {
+        @State var volume: Double = 10
+        
+        var body: some View {
+            VolumeView(volume: $volume)
+        }
+    }
+    
+    return Preview()
 }

@@ -8,11 +8,39 @@
 import SwiftUI
 
 struct FlowView: View {
+    @Binding var flow: Double
+    @State private var isEditing: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Slider(
+                value: $flow,
+                in: 0...15,
+                step: 1
+            ) {
+                Text("Flow")
+            } minimumValueLabel: {
+                Text("0")
+            } maximumValueLabel: {
+                Text("15")
+            } onEditingChanged: { editing in
+                isEditing = editing
+            }
+            
+            Text("\(flow, format: .number)")
+                .foregroundColor(isEditing ? .red : .blue)
+        }
     }
 }
 
 #Preview {
-    FlowView()
+    struct Preview: View {
+        @State var flow: Double = 2
+        
+        var body: some View {
+            FlowView(flow: $flow)
+        }
+    }
+    
+    return Preview()
 }

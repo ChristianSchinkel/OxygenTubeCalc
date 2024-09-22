@@ -12,6 +12,10 @@ struct ContentView: View {
     @State private var pressure: Double = 150
     @State private var flow: Double = 2
     
+    private var gaugeTime: Double {
+        remindingMinutes.value
+    }
+    
     private var currentVolume: Measurement<UnitVolume> {
         oxygenTubeVolumeStandardAtmosphere(tubeVolumeInLiter: volume, tubePressureInBars: pressure)
     }
@@ -31,23 +35,31 @@ struct ContentView: View {
         NavigationStack {
             Form {
                 Section("Volume:") {
-                    TextField("Volume", value: $volume, format: .number)
-                    TextField("Pressure", value: $pressure, format: .number)
+                    VolumeView(volume: $volume)
+                    PressureView(pressure: $pressure)
                     Text("The current volume of the Tube is now: \(currentVolume.formatted(swedishVolumeFormatStyle)).")
                 }
                 
                 Section("Reminding Time:") {
-                    TextField("Flow", value: $flow, format: .number)
-                    Text("The current estimated time until the tube is empty is now: \n \(remindingMinutes.formatted(durationFormatStyle)).")
+                    FlowView(flow: $flow)
+                    
+                    Gauge(value: gaugeTime, in: 0...750) {
+                        Text("The current estimated time until the tube is empty is now: \n \(remindingMinutes.formatted(durationFormatStyle)).")
+                    }
                 }
-                
-                Section("DueDate to change the tube") {
-                    Text("\(changeTubeDueDate, format: .dateTime)")
-                }
-                
             }
             .keyboardType(.decimalPad)
             .navigationTitle("OxygenTubeCalc")
+            
+            VStack(alignment: .leading) {
+                Text("Change tube at:")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+                Text("\(changeTubeDueDate, format: .dateTime)")
+                    .font(.title)
+                    .fontWeight(.semibold)
+            }
         }
     }
     // MARK: - Functions for this View

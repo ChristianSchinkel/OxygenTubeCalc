@@ -17,6 +17,12 @@
 		AAA166982CA08BA7009DEB7D /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA166972CA08BA7009DEB7D /* VolumeView.swift */; };
 		AAA166992CA08BA7009DEB7D /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA166972CA08BA7009DEB7D /* VolumeView.swift */; };
 		AAA1669A2CA08BA7009DEB7D /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA166972CA08BA7009DEB7D /* VolumeView.swift */; };
+		AAA1669C2CA0929F009DEB7D /* PressureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1669B2CA0929F009DEB7D /* PressureView.swift */; };
+		AAA1669D2CA0929F009DEB7D /* PressureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1669B2CA0929F009DEB7D /* PressureView.swift */; };
+		AAA1669E2CA0929F009DEB7D /* PressureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1669B2CA0929F009DEB7D /* PressureView.swift */; };
+		AAA166A02CA094B5009DEB7D /* FlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1669F2CA094B5009DEB7D /* FlowView.swift */; };
+		AAA166A12CA094B5009DEB7D /* FlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1669F2CA094B5009DEB7D /* FlowView.swift */; };
+		AAA166A22CA094B5009DEB7D /* FlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA1669F2CA094B5009DEB7D /* FlowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,8 @@
 		AA24DC4F2947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxygenTubeCalcUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AA24DC5C294787DC00C61A2C /* OxygenTubeCalcPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OxygenTubeCalcPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AAA166972CA08BA7009DEB7D /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
+		AAA1669B2CA0929F009DEB7D /* PressureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureView.swift; sourceTree = "<group>"; };
+		AAA1669F2CA094B5009DEB7D /* FlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,8 @@
 			children = (
 				AA24DC342947870800C61A2C /* ContentView.swift */,
 				AAA166972CA08BA7009DEB7D /* VolumeView.swift */,
+				AAA1669B2CA0929F009DEB7D /* PressureView.swift */,
+				AAA1669F2CA094B5009DEB7D /* FlowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA24DC352947870800C61A2C /* ContentView.swift in Sources */,
+				AAA1669C2CA0929F009DEB7D /* PressureView.swift in Sources */,
+				AAA166A02CA094B5009DEB7D /* FlowView.swift in Sources */,
 				AAA166982CA08BA7009DEB7D /* VolumeView.swift in Sources */,
 				AA24DC332947870800C61A2C /* OxygenTubeCalcApp.swift in Sources */,
 			);
@@ -282,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA166A22CA094B5009DEB7D /* FlowView.swift in Sources */,
+				AAA1669E2CA0929F009DEB7D /* PressureView.swift in Sources */,
 				AAA166992CA08BA7009DEB7D /* VolumeView.swift in Sources */,
 				AA24DC442947870900C61A2C /* OxygenTubeCalcTests.swift in Sources */,
 			);
@@ -292,6 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA24DC4E2947870900C61A2C /* OxygenTubeCalcUITests.swift in Sources */,
+				AAA1669D2CA0929F009DEB7D /* PressureView.swift in Sources */,
+				AAA166A12CA094B5009DEB7D /* FlowView.swift in Sources */,
 				AAA1669A2CA08BA7009DEB7D /* VolumeView.swift in Sources */,
 				AA24DC502947870900C61A2C /* OxygenTubeCalcUITestsLaunchTests.swift in Sources */,
 			);

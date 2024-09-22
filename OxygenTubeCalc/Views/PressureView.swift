@@ -8,11 +8,40 @@
 import SwiftUI
 
 struct PressureView: View {
+    @Binding var pressure: Double
+    @State private var isEditing: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Slider(
+                value: $pressure,
+                in: 0...150,
+                step: 10
+            ) {
+                Text("Pressure")
+            } minimumValueLabel: {
+                Text("0")
+            } maximumValueLabel: {
+                Text("150")
+            } onEditingChanged: { editing in
+                isEditing = editing
+            }
+            
+            Text("\(pressure, format: .number)")
+                .foregroundColor(isEditing ? .red : .blue)
+        }
+        
     }
 }
 
 #Preview {
-    PressureView()
+    struct Preview: View {
+        @State var pressure: Double = 10
+        
+        var body: some View {
+            PressureView(pressure: $pressure)
+        }
+    }
+    
+    return Preview()
 }
